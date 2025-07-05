@@ -50,7 +50,33 @@ public class DefaultUser implements User {
 	
 	@Override
 	public String toString() {
-		return
+		return "First Name: " + this.getFirstName() + "\t\t" +
+				"Last Name: " + this.getLastName() + "\t\t" + 
+				"Email: " + this.getEmail();
 	} 
 	
+	@Override
+	public void setPassword(String password) {
+		if (password == null) {
+			return ;
+		}
+		this.password = password;
+	}
+	
+	@Override
+	public void setEmail(String newEmail) {
+		if (email == null) {
+			return;
+		}
+		this.email = newEmail;
+	}
+	
+	@Override
+	public int getId() {
+		return this.id;
+	}
+	
+	void clearState() {
+		userCounter = 0;
+	}
 }
