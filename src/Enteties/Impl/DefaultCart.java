@@ -80,12 +80,4 @@ public class DefaultCart implements Cart {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
 }

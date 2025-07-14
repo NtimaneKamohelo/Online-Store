@@ -3,6 +3,7 @@ package Enteties.Impl;
 import java.util.Arrays;
 
 import Enteties.Order;
+import Enteties.Product;
 
 public class DefaultOrder implements Order {
 

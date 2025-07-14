@@ -1,7 +1,5 @@
-package Menu;
+package Menu.impl;
 
 public class SignUpMenu {
-	
-	
 
 }
