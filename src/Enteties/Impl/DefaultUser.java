@@ -21,7 +21,7 @@ public class DefaultUser implements User {
 		
 	}
 	
-	DefaultUser(String firstName, String lastName, String password, String email){
+	public DefaultUser(String firstName, String lastName, String password, String email){
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.password = password;

@@ -1,5 +1,8 @@
 package Menu;
 
-public enum menu {
+public interface menu {
 
+	void start();
+	void printMenuHeader();
+	
 }
