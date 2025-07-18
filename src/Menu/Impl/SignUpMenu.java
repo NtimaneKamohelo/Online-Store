@@ -6,10 +6,11 @@ import Enteties.User;
 import Enteties.Impl.DefaultUser;
 import Menu.menu;
 import services.UserManagementService;
+import services.impl.DefaultUserManagementService;
 
 public class SignUpMenu implements menu {
 
-	private UserManagementService useManagementService;
+	private UserManagementService userManagementService;
 	private ApplicationContext context;
 	
 	{
