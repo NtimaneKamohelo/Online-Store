@@ -5,6 +5,7 @@ import java.util.Scanner;
 import Enteties.User;
 import Enteties.Impl.DefaultUser;
 import Menu.menu;
+import configs.ApplicationContext;
 import services.UserManagementService;
 import services.impl.DefaultUserManagementService;
 
@@ -36,7 +37,7 @@ public class SignUpMenu implements menu {
 		
 		String errorMessage = userManagementService.registerUser(user);
 		if (errorMessage == null || errorMessage.isEmpty()) {
-			context.setLoggedInUSer(user);
+			context.setLoggedInUser(user);
 			System.out.println("New user is created");
 		} else {
 			System.out.println(errorMessage);
